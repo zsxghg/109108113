@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+#contents {
+    width: 980px;
+    margin: 0 auto;
+    background-color: rgba(206, 176, 221, 0.6);
+}
+
+body {
+    background-color: rgba(123, 123, 150, 0.8);
+    background-image: url(../img/carton_cat.jpg);
+    background-repeat: no-repeat;
+    background-size: 500px 500px;
+    background-position: top right;
+    background-attachment: fixed;
+}
+
+
+a {
+    color: brown;
+}
+
+.menu a {
+    display: block;
+    padding: 10px;
+    background: #6fbb9a;
+    border-radius: 8px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.menu li {
+    list-style-type: none;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+h1 {
+    background-color: rgb(52, 196, 69);
+    color: rgb(255, 255, 255);
+    width: 300px;
+    margin: 40px auto;
+    padding: 30px;
+    border: 5px dotted rgb(30, 47, 5);
+    text-align: center;
+    font-size: 300%;
+    line-height: 1;
+    border-radius: 50%;
+    box-shadow: 50px 50px 150px #000;
+    text-shadow: 5px 5px 10px #000;
+
+}
+
+h2 {
+    color: blue;
+    font-weight: bold;
+    width: 950px;
+    padding: 5px;
+    border: 1px solid yellow;
+    border-left: 10px solid yellow;
+}
+
+.h_sub {
+    padding: 10px;
+    background-color: orange;
+    color: aqua;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px inset;
+}
+
+.photo {
+    width: 500px;
+    height: 400px;
+}
+
+.imgL {
+    float: left;
+    margin-right: 30px;
+}
+
+.imgR {
+    float: right;
+    margin-left: 30px;
+}
+
+.clear {
+    clear: both;
+}
+
+.round {
+    border-radius: 50%;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}

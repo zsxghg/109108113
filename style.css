@@ -1,0 +1,294 @@
+@charset "utf-8";
+
+/* 重置所有標籤的樣式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 重置字體 */
+body {
+    font-family:
+        /*西文*/
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial,
+        /*中文*/
+        "蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+    font-size: 100%;
+    line-height: 1.5;
+    color: var(--deep);
+}
+
+/* 重置標題 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+/* 重置列表 */
+ul,
+ol {
+    list-style: none;
+}
+
+/* 重置圖片 */
+img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* 重置連接 */
+a {
+    display: block;
+    /* 區塊按鈕 */
+    color: var(--deep);
+    text-decoration: none;
+}
+
+/* 共用設定區 */
+body {
+    background-color: rgb(240, 240, 240);
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* 頁首區 */
+.topbar {
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 10px 15px;
+    z-index: 99;
+    font-family: openhuninn, sans-serif;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.navigation ul {
+    display: flex;
+}
+
+.menu {
+    border: 1px solid transparent;
+    border-radius: 99px;
+    margin: 10px 0;
+    padding: 0 20px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, .7);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.menu a {
+    margin: 10px;
+    padding: 5px;
+    transition: .4s;
+    border-bottom: 2px solid transparent;
+}
+
+.menu a:hover {
+    border-bottom: #333 2px solid;
+}
+
+
+/* 自我介紹區 */
+.item-me {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    margin: 0 100px;
+}
+
+.item-me h2 {
+    font-size: 2rem;
+}
+
+#me {
+    display: flex;
+    background-color: rgb(240, 240, 240);
+    flex-direction: row;
+    justify-content: center;
+}
+
+#me figure {
+    height: 50vh;
+    width: 50vh;
+}
+
+#me img {
+    object-fit: cover;
+    height: 100%;
+}
+
+#me ul {
+    margin-top: 20px;
+}
+
+#me li {
+    padding: 5px;
+    letter-spacing: 1px;
+}
+
+#me a {
+    text-decoration: underline;
+}
+
+#me a:hover {
+    color: blue;
+}
+
+/* 興趣學歷區 */
+.stu-1 {
+    display: flex;
+    height: 100%;
+}
+
+.stu-item {
+    flex: 1;
+    margin: 50px 50px;
+    overflow: hidden;
+}
+
+.stu-fun {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.stu-item-1 {
+    flex: 1;
+}
+
+.stu-fig {
+    padding: 50px 80px;
+}
+
+.stu-fig-1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 100px;
+}
+
+#stu ul {
+    display: flex;
+    flex-direction: column;
+}
+
+#stu h2 {
+    font-size: 2rem;
+}
+
+#stu li {
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+#stu p {
+    font-size: 25px;
+    margin: 30px auto;
+    padding-left: 150px;
+    letter-spacing: 1px;
+}
+
+#stu figure {
+    height: 35vh;
+}
+
+#stu img {
+    object-fit: cover;
+    height: 100%;
+}
+
+/* 專長經歷區 */
+#exp figure {
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+    margin-top: 10rem;
+    margin-left: 10rem;
+}
+
+#exp img {
+    height: 500px;
+    width: 500px;
+}
+
+.exp-a {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh;
+    margin-right: 100px;
+}
+
+.item-exp,
+.item-exp02 {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-exp h2,
+.item-exp02 h2 {
+    margin: 5rem 0 1rem 0;
+    font-size: 2rem;
+}
+
+.item-exp li,
+.item-exp02 li {
+    font-size: 25px;
+    letter-spacing: 1px;
+    padding: 10px 0;
+}
+
+/* 作品集區 */
+#work {
+    display: flex;
+    justify-content: center;
+    margin: 110px 0;
+}
+
+#work a {
+    margin: 10px;
+    padding: 5px;
+    transition: .4s;
+    border-bottom: 2px solid transparent;
+    text-decoration: underline;
+}
+
+#work a:hover {
+    color: blue;
+}
+
+#work li {
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+/* 頁尾區 */
+footer {
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background-color: rgb(210, 160, 250);
+}

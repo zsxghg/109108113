@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+        .product {
+            width: 90%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            margin: 0 auto;
+        }
+
+        .pic {
+            width: 350px;
+            height: 525px;
+            background-image: url(img/aarn-giri-bird.png);
+            display: flex;
+            background-color: black;
+
+            align-items: center;
+            justify-content: center;
+        }
+
+        .item:not(:last-child) {
+            margin-right: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="product">
+        <div class="item">
+            <div class="pic">
+            </div>
+            <h1>一隻鳥</h1>
+            <p>鳥或者鳥類，是鳥綱動物的通稱</p>
+        </div>
+        <div class="item">
+            <div class="pic">
+            </div>
+            <h1>一隻鳥</h1>
+            <p>鳥或者鳥類，是鳥綱動物的通稱</p>
+        </div>
+        <div class="item">
+            <div class="pic">
+            </div>
+            <h1>一隻鳥</h1>
+            <p>鳥或者鳥類，是鳥綱動物的通稱</p>
+        </div>
+        <div class="item">
+            <div class="pic">
+            </div>
+            <h1>一隻鳥</h1>
+            <p>鳥或者鳥類，是鳥綱動物的通稱</p>
+        </div>
+        <div class="item">
+            <div class="pic">
+            </div>
+            <h1>一隻鳥</h1>
+            <p>鳥或者鳥類，是鳥綱動物的通稱</p>
+        </div>
+        <div class="item">
+            <div class="pic">
+            </div>
+            <h1>一隻鳥</h1>
+            <p>鳥或者鳥類，是鳥綱動物的通稱</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

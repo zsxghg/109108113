@@ -1,0 +1,53 @@
+#container {
+    width: 980px;
+    margin: 0 auto;
+    background-color: coral;
+    opacity: 0.85;
+}
+
+
+body {
+    background-image: url("../pic/aeust.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+
+/*.picb {
+    width: "300px";
+    height: "300px";
+}*/
+
+.name01 {
+    font-size: 200%;
+    color: blue;
+}
+
+.photo01 {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    border: 5px #ffffff solid;
+    margin-left: 50px;
+}
+
+
+.nameR {
+    float: right;
+    margin-right: 250px;
+    margin-top: 50px;
+}
+
+.font {
+    margin-left: 20px;
+}
+
+.class {
+    clear: both;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
